@@ -1,5 +1,4 @@
 import numpy as np
-import math
 import matplotlib as mpl
 mpl.use('Agg') # この行を追記
 import matplotlib.pyplot as plt
@@ -14,7 +13,7 @@ minute = 60
 def gen_recallrate_by_times(recall_time,passed_hour):
     # args= [1,5,15,50,500,5000]
     args= [1,5,15,50,300,1500]
-    rate=math.e**(-(passed_hour)/(args[recall_time]*hour))
+    rate=np.e**(-(passed_hour)/(args[recall_time]*hour))
     return 1-rate
 
 #　学習時間を入れると、自動で復習のタイミングで必要な復習時間を返す

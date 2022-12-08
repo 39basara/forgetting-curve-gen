@@ -3,7 +3,6 @@ import matplotlib as mpl
 mpl.use('Agg') # この行を追記
 import matplotlib.pyplot as plt
 
-
 # arg
 hour = 24
 minute = 60
